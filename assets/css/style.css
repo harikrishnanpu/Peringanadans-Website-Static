@@ -7,6 +7,7 @@
 
 /* Importing Fonts Google */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 /* ------ */
 
 /*--------------------------------------------------------------
@@ -741,6 +742,10 @@ section {
   transition: 0.3s;
   position: relative;
   z-index: 1;
+}
+
+.portfolio .portfolio-wrap p {
+  font-family: 'Staatliches', cursive;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
