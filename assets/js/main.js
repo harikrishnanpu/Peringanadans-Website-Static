@@ -1,8 +1,6 @@
 /**
-* Template Name: Ninestars - v4.10.0
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: Peringanadans Spices
+* Author: Hari Krishnan Jishnu Panicker
 */
 (function() {
   "use strict";
@@ -18,6 +16,10 @@
       return document.querySelector(el)
     }
   }
+
+
+  // bg-top
+
 
   /**
    * Easy event listener function

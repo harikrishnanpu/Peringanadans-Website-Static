@@ -101,3 +101,19 @@
   .owl-carousel .owl-next {
     right: 10px;
   }
+
+  .show-mob-img{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .hidden{
+      display: none;
+    }
+
+    .show-mob-img{
+      display: block;
+    }
+    
+  }

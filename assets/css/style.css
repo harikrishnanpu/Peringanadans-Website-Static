@@ -3,6 +3,12 @@
 * Author: Hari Krishnan, Jishnu Panicker
 */
 
+
+
+/* Importing Fonts Google */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+/* ------ */
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -10,6 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #212529;
   background: url(../../images/papper.webp);
+  overflow-x: hidden;
 }
 
 a {
@@ -39,7 +46,7 @@ h6,
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 99999;
   background: #eb5d1e;
@@ -360,13 +367,22 @@ h6,
 #hero h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 56px;
   color: #4e4039;
+  font-family: 'Rubik Gemstones', cursive;
 }
 
 #hero p {
   color: #715c51;
+}
+
+#hero .bg-top{
+  position: absolute;
+  top: 10px;
+  width: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #hero .btn-get-started {
@@ -383,8 +399,30 @@ h6,
   background: #eb5d1e;
 }
 
+.btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 5px;
+  color: #fff;
+  background: #eb5d1e;
+  cursor: pointer;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 #hero .btn-get-started:hover {
   background: #ef7f4d;
+}
+
+.btn-get-started:hover {
+  background: #ef7f4d;
+  color: white;
 }
 
 #hero .animated {
@@ -596,10 +634,10 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
-  margin: 0 0 40px 0;
+  margin: 0 0 15px 0;
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
@@ -623,7 +661,7 @@ section {
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .services .title a {
@@ -631,9 +669,15 @@ section {
 }
 
 .services .description {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 14px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .services .description {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -678,6 +722,7 @@ section {
   overflow: hidden;
   border-radius: 8px;
   z-index: 1;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1387,5 +1432,12 @@ section {
     -moz-text-align-last: center;
     text-align-last: center;
     padding: 3px 0;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  #hero{
+    margin: -160px 0 -72px 0;
   }
 }
