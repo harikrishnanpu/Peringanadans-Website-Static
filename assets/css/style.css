@@ -417,6 +417,14 @@ h6,
   margin-right: auto !important;
 }
 
+#hero .hero-bg{
+  position: absolute;
+  top: 55%;
+  margin: auto;
+  left: -10px;
+  z-index: -99999;
+}
+
 #hero .btn-get-started:hover {
   background: #ef7f4d;
 }
@@ -746,6 +754,16 @@ section {
 
 .portfolio .portfolio-wrap p {
   font-family: 'Staatliches', cursive;
+}
+
+
+.portfolio .portfolio-wrap .new-tag{
+  position: absolute;
+  background-color: #d29718;
+  padding: 5px;
+  color: white;
+  font-size: 13px;
+  border-bottom-right-radius: 10px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
